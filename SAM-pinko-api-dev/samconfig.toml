@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "pinko-api-dev"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["PinkoapidevProductFunction=601772211076.dkr.ecr.us-east-1.amazonaws.com/pinko-api-dev"]
+disable_rollback = true
