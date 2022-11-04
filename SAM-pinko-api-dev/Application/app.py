@@ -85,6 +85,6 @@ def load_from_db_2(market,org_id,start,end):
   if db_obj_2 is None: return None
   json_data = json.loads(db_obj_2.decode('utf-8'))
   sam=json_data.get('data')
-  res_list = [sam[i] for i in range(start,end)]
+  res_list = [sam[i] for i in range(start,end+1)]
   return res_list  
 
